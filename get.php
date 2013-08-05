@@ -2,14 +2,14 @@
 
 $my_blog = "http://www.myblog.com";
 $my_api_key = "JETPACK_API_KEY";
-$csvurl = "http://stats.wordpress.com/csv.php?api_key=$my_api_key&blog_uri=$my_blog&table=views&days=1";
-$myArr = array();
-$filename = $csvurl;
+$filename = "http://stats.wordpress.com/csv.php?api_key=$my_api_key&blog_uri=$my_blog&table=views&days=1";
 
-if (($handle = fopen($filename, "r")) !== FALSE) 
+$myArr = array();
+
+if ( ($handle = fopen($filename, "r") ) !== FALSE) 
 {
     $key = 0;    //setting the array key
-    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
+    while ( ($data = fgetcsv($handle, 1000, ",") ) !== FALSE) 
     {
         $count = count($data);  //getting the total keys in a row
        
