@@ -5,7 +5,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 <script>
-
 setInterval(function () {
     $.get("get.php", function (data, status) {
 
@@ -16,12 +15,11 @@ setInterval(function () {
 
 }, 100);
 $(document).ready(function () {});
-
 </script>
-
-
+    
 </head>
-<body>
+    
+<body>    
 <div id="main">
     <div id="count">
     <p style="font-size:50px;">
@@ -30,7 +28,8 @@ $(document).ready(function () {});
     <h2 id="countvariable"></h2>
     </div>
     <div id="footer"> 
-    &copy;  <?php echo date("Y"); ?> | Developed and Designed by <a href="http://www.activenerds.com/about/">Amal Murali</a>
+    &copy;  
+        <?php echo date("Y"); ?> | Developed and Designed by <a href="http://www.activenerds.com/about/">Amal Murali</a>
     </div>
-</div>
+</div>    
 </body>
